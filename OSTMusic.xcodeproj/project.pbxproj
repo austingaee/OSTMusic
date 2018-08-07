@@ -12,6 +12,7 @@
 		94ADBC62211939D600953BD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94ADBC60211939D600953BD3 /* Main.storyboard */; };
 		94ADBC64211939D900953BD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94ADBC63211939D900953BD3 /* Assets.xcassets */; };
 		94ADBC67211939D900953BD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94ADBC65211939D900953BD3 /* LaunchScreen.storyboard */; };
+		94ADBC7321193C2500953BD3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94ADBC7221193C2500953BD3 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		94ADBC63211939D900953BD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94ADBC66211939D900953BD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94ADBC68211939D900953BD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94ADBC7221193C2500953BD3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 		94ADBC50211939D600953BD3 = {
 			isa = PBXGroup;
 			children = (
+				94ADBC7221193C2500953BD3 /* Default-568h@2x.png */,
 				94ADBC5B211939D600953BD3 /* OSTMusic */,
 				94ADBC5A211939D600953BD3 /* Products */,
 			);
@@ -54,14 +57,46 @@
 		94ADBC5B211939D600953BD3 /* OSTMusic */ = {
 			isa = PBXGroup;
 			children = (
-				94ADBC5C211939D600953BD3 /* AppDelegate.swift */,
-				94ADBC5E211939D600953BD3 /* ViewController.swift */,
-				94ADBC60211939D600953BD3 /* Main.storyboard */,
-				94ADBC63211939D900953BD3 /* Assets.xcassets */,
-				94ADBC65211939D900953BD3 /* LaunchScreen.storyboard */,
-				94ADBC68211939D900953BD3 /* Info.plist */,
+				94ADBC7121193A4100953BD3 /* SupportingFiles */,
+				94ADBC7021193A3100953BD3 /* Controller */,
+				94ADBC6F21193A2D00953BD3 /* View */,
+				94ADBC6E21193A2800953BD3 /* Model */,
 			);
 			path = OSTMusic;
+			sourceTree = "<group>";
+		};
+		94ADBC6E21193A2800953BD3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		94ADBC6F21193A2D00953BD3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				94ADBC63211939D900953BD3 /* Assets.xcassets */,
+				94ADBC60211939D600953BD3 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		94ADBC7021193A3100953BD3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				94ADBC5C211939D600953BD3 /* AppDelegate.swift */,
+				94ADBC5E211939D600953BD3 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		94ADBC7121193A4100953BD3 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				94ADBC68211939D900953BD3 /* Info.plist */,
+				94ADBC65211939D900953BD3 /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94ADBC67211939D900953BD3 /* LaunchScreen.storyboard in Resources */,
+				94ADBC7321193C2500953BD3 /* Default-568h@2x.png in Resources */,
 				94ADBC64211939D900953BD3 /* Assets.xcassets in Resources */,
 				94ADBC62211939D600953BD3 /* Main.storyboard in Resources */,
 			);
@@ -282,12 +318,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A83NX222R9;
-				INFOPLIST_FILE = OSTMusic/Info.plist;
+				INFOPLIST_FILE = OSTMusic/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.austingae.OSTMusic;
+				PRODUCT_BUNDLE_IDENTIFIER = com.austingae.Dicee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -300,12 +336,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A83NX222R9;
-				INFOPLIST_FILE = OSTMusic/Info.plist;
+				INFOPLIST_FILE = OSTMusic/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.austingae.OSTMusic;
+				PRODUCT_BUNDLE_IDENTIFIER = com.austingae.Dicee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
